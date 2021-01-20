@@ -24,6 +24,8 @@
     "moment": "^2.29.1",
     "mongoose": "^5.11.9",
     "node-sass": "^5.0.0",
+    "passport": "^0.4.1",
+    "passport-github": "^1.1.0",
     "postcss": "^8.2.4",
     "react": "^17.0.1",
     "react-bulma-components": "^3.4.0",
