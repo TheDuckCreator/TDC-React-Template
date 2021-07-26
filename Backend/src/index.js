@@ -1,11 +1,11 @@
-import Express from "express";
+import express from "express";
 import config from "../config.json";
 import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
-import MainRoute from "./mainroute";
+import apiRoute from "./routers/api";
 
-const app = Express();
+const app = express();
 
 // Using Middleware
 app.use(cors());
@@ -17,6 +17,7 @@ mongoose.connect(config.dbConnectionString, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
+
 const db = mongoose.connection;
 db.on("error", (err) => {
   console.log("Connect to MongoDB have some error :( ");
@@ -33,7 +34,7 @@ app.get("/", (req, res) => {
 });
 
 // Main Routing (it will behind the API)
-app.use("/api", MainRoute);
+app.use("/api", apiRoute);
 
 app.listen(config.port, () => {
   console.log("Start TDC App");

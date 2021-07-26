@@ -1,5 +1,5 @@
 import Express from "express";
-import AuthRouter from "./Routes/Auth";
+import AuthRouter from "./Auth";
 const app = Express.Router();
 
 app.get("/hello", (req, res) => {
