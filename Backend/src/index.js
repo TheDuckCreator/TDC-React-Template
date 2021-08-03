@@ -1,9 +1,11 @@
 import express from "express";
-import config from "../config.json";
-import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
+
+import config from "./configs/app";
 import apiRoute from "./routers/api";
+import staticRoute from "./routers/static";
+import "./configs/mongo";
 
 const app = express();
 
@@ -12,26 +14,8 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Database
-mongoose.connect(config.dbConnectionString, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
-const db = mongoose.connection;
-db.on("error", (err) => {
-  console.log("Connect to MongoDB have some error :( ");
-  console.error(err);
-});
-db.on("open", () => {
-  console.log("Connect to Mongodb Success");
-});
-
 // Frontend Routing
-//TODO: Change it to render html static element
-app.get("/", (req, res) => {
-  res.send("The Duck Creator Express Server");
-});
+app.use("/", staticRoute);
 
 // Main Routing (it will behind the API)
 app.use("/api", apiRoute);
