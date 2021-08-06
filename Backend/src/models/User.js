@@ -7,7 +7,6 @@ const userSchema = new Schema({
   tel: String,
   email: String,
   role: { type: String, default: "USER" },
-  githubId: String,
 });
 
 const userModel = Mongoose.model("User", userSchema);

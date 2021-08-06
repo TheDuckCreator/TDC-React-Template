@@ -1,11 +1,15 @@
-import Express from "express";
-import AuthRouter from "./Auth";
-const app = Express.Router();
+import express from "express";
 
-app.get("/hello", (req, res) => {
+import authRoute from "./Auth";
+import userRouter from "./user";
+
+const router = express.Router();
+
+router.get("/hello", (req, res) => {
   res.send("World");
 });
 
-app.use("/auth", AuthRouter);
+// router.use("/auth", authRoute);
+router.use("/user", userRouter);
 
-export default app;
+export default router;
