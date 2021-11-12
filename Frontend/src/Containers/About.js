@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 export default function About() {
   return (
     <div className='container'>
@@ -6,5 +6,5 @@ export default function About() {
         <h1>Hello World</h1>
       </div>
     </div>
-  )
+  );
 }
