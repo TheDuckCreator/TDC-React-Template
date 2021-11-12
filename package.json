@@ -1,0 +1,13 @@
+{
+  "name": "tdc-react-template",
+  "version": "0.1.0",
+  "private": false,
+  "scripts": {
+    "start": " cd Backend && npx nodemon src/Server/app.js  ",
+    "dev": "concurrently  \"cd Frontend &&  npm start \" \" cd Backend && npx nodemon src/app.js \""
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.6"
+  }
+}

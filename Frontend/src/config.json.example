@@ -1,0 +1,7 @@
+{
+  "port": 6000,
+  "dbConnectionString": "mongodb://localhost:27017/",
+  "clientSecret": "",
+  "clientId": "",
+  "callbackURL": "https://medtaking.theduckcreator.in.th/api/auth/callback"
+}
