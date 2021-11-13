@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./main.css";
 import "./tailwind.css";
+import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
+
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import {

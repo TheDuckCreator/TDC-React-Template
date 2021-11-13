@@ -1,34 +1,29 @@
 import React from "react";
-import { Button, Space } from "antd-mobile";
 import { useHistory } from "react-router-dom";
-
 export default function Home({ props }) {
   const history = useHistory();
   return (
     <div className='container mx-auto'>
-      <Space direction='vertical' block>
-        <Button
-          size='large'
-          block
+      <div className='flex flex-col gap-2'>
+        <button
+          className='bg-shamrock-500 shadow-md hover:shadow-lg  text-lg py-6 text-shamrock-50  font-sans p-2 m-2'
           onClick={() => history.push("/daily-booking")}
         >
           ตารางการจองรายวัน
-        </Button>
-        <Button
-          size='large'
+        </button>
+        <button
+          className='bg-steel-500 shadow-md hover:shadow-lg  text-lg py-6 text-shamrock-50  font-sans p-2 m-2'
           onClick={() => history.push("/room-booking")}
-          block
         >
           สถานะห้อง
-        </Button>
-        <Button
-          size='large'
+        </button>
+        <button
+          className='bg-royalblue-500 shadow-md hover:shadow-lg  text-lg py-6 text-shamrock-50  font-sans p-2 m-2'
           onClick={() => history.push("/create-booking")}
-          block
         >
           จองห้องพัก
-        </Button>
-      </Space>
+        </button>
+      </div>
     </div>
   );
 }
