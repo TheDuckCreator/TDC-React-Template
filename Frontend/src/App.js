@@ -1,57 +1,26 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Provider } from "react-redux";
 import "./main.css";
 import "./tailwind.css";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import {
-  Home,
-  About,
-  CreateBooking,
-  DailyBookingStatus,
-  RoomBookingStatus,
-} from "./Containers";
+import configureStore from "./Redux/configureStore";
+import Container from "./Containers";
 
-function App() {
-  useEffect(() => {
-    return () => {};
-  }, []);
-
+const App = () => {
+  const store = configureStore();
   return (
-    <div>
-      <Helmet>
-        <meta charSet='utf-8' />
-        <title>Chaesonvintage </title>
-      </Helmet>
-
-      <Router>
-        <Navbar />
-        <div className='min-h-screen m-8'>
-          <Switch>
-            <Route path='/create-booking'>
-              <CreateBooking />
-            </Route>
-            <Route path='/daily-booking'>
-              <DailyBookingStatus />
-            </Route>
-            <Route path='/room-booking'>
-              <RoomBookingStatus />
-            </Route>
-            <Route path='/about'>
-              <About />
-            </Route>
-            <Route path='/'>
-              <Home />
-            </Route>
-          </Switch>
-        </div>
-        <Footer />
-      </Router>
-    </div>
+    <Provider store={store}>
+      <div>
+        <Helmet>
+          <meta charSet='utf-8' />
+          <title>Chaesonvintage </title>
+        </Helmet>
+        <Container />
+      </div>{" "}
+    </Provider>
   );
-}
+};
 
 export default App;
