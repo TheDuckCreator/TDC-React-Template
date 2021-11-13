@@ -18,6 +18,16 @@ export const onReadOne = async (req, res) => {
   }
 };
 
+export const onLogin = async (req, res) => {
+  try {
+    const { lineUUID, name = "", profile = "" } = req.body;
+    const result = await UserService.login({ lineUUID, name, profile });
+    res.status(200).send(result);
+  } catch (error) {
+    res.status(403).send({ error });
+  }
+};
+
 export const onCreateOne = async (req, res) => {
   try {
     const result = await UserService.createOneUser(req.body);
@@ -45,4 +55,11 @@ export const onDeleteOne = async (req, res) => {
   }
 };
 
-export default { onReadAll, onReadOne, onCreateOne, onEditOne, onDeleteOne };
+export default {
+  onReadAll,
+  onReadOne,
+  onCreateOne,
+  onEditOne,
+  onDeleteOne,
+  onLogin,
+};

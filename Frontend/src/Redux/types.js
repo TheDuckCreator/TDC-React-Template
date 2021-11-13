@@ -16,3 +16,10 @@ export const ROOM_CREATE = "ROOM_CREATE";
 export const ROOM_UPDATE = "ROOM_UPDATE";
 export const ROOM_DELETE = "ROOM_DELETE";
 export const ROOM_ERROR = "ROOM_ERROR";
+
+export const USER_ALL = "USER_ALL";
+export const USER_GET = "USER_GET";
+export const USER_CREATE = "USER_CREATE";
+export const USER_UPDATE = "USER_UPDATE";
+export const USER_DELETE = "USER_DELETE";
+export const USER_ERROR = "USER_ERROR";
