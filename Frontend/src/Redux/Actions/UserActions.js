@@ -1,4 +1,4 @@
-import api from "../../Config/api";
+import api from "../../Config/localApi";
 
 import {
   USER_ALL,
