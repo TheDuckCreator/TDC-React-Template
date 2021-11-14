@@ -5,6 +5,7 @@ export const meLogin = (payload) => async (dispatch) => {
   await api
     .post(`${process.env.REACT_APP_API_URL}/user/login`, payload)
     .then((res) => {
+      console.log("Res", res.data);
       const { accessToken, _id } = res?.data;
       window.localStorage.setItem("LOCAL_TOKEN", accessToken);
       window.localStorage.setItem("USER_ID", _id);

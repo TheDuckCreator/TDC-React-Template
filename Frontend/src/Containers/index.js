@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import liff from "@line/liff";
 
 import Home from "./Home";
 import About from "./About";
@@ -16,16 +17,46 @@ import * as actions from "../Redux/Actions";
 const Container = () => {
   const dispatch = useDispatch();
   const [isReady, setIsReady] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    if (!isReady) {
+    liff
+      .init({ liffId: process.env.REACT_APP_LIFF_ID })
+      .then(() => {
+        console.log("Connect to liff");
+        const isLoggedIn = liff.isLoggedIn();
+        if (!isLoggedIn) {
+          liff.login();
+        } else {
+          liff.getProfile().then((profile) => {
+            const payload = {
+              lineUUID: profile?.userId,
+              name: profile?.displayName,
+              profile: profile?.pictureUrl,
+            };
+            dispatch(actions.meLogin(payload)).then(() => {
+              setIsLoggedIn(true);
+            });
+          });
+        }
+      })
+      .catch((err) => {
+        console.error("Cannot Connect to Line Frontend Framework", err);
+      });
+    return () => {};
+  }, []);
+
+  useEffect(() => {
+    if (isLoggedIn && !isReady) {
       dispatch(actions.systemConnect()).then(() => {
-        setIsReady(true);
+        dispatch(actions.meGet()).then(() => {
+          setIsReady(true);
+        });
       });
     }
 
     return () => {};
-  }, [isReady]);
+  }, [isReady, isLoggedIn]);
 
   return (
     <Router>

@@ -28,7 +28,7 @@ export const login = async (data) => {
     const loggedInUser = await UserModel.findOne({ lineUUID });
     if (loggedInUser && !_.isEmpty(loggedInUser)) {
       const payload = {
-        ...loggedInUser,
+        ...loggedInUser.toJSON(),
         authToken: middleware.generateToken({ lineUUID }),
       };
       return payload;
