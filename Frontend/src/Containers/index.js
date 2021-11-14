@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import liff from "@line/liff";
 
@@ -14,11 +14,14 @@ import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 
 import * as actions from "../Redux/Actions";
+import { Result, Spin } from "antd";
 
 const Container = () => {
   const dispatch = useDispatch();
   const [isReady, setIsReady] = useState(false);
+  const me = useSelector((state) => state.me);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isAllow, setIsAllow] = useState(false);
 
   useEffect(() => {
     liff
@@ -58,6 +61,35 @@ const Container = () => {
 
     return () => {};
   }, [isReady, isLoggedIn]);
+
+  useEffect(() => {
+    if (!isAllow) {
+      if (me?.allow === true) {
+        setIsAllow(true);
+      }
+    }
+    return () => {};
+  }, [me]);
+
+  if (!isReady) {
+    return (
+      <div className='flex justify-center'>
+        <Spin size='large' />
+      </div>
+    );
+  }
+
+  if (!isAllow) {
+    return (
+      <div className='flex justify-center'>
+        <Result
+          status='403'
+          title='403'
+          subTitle='ขออภัย ท่านไม่มีสิทธิในการเข้าถึงส่วนนี้'
+        />
+      </div>
+    );
+  }
 
   return (
     <Router>
