@@ -23,6 +23,12 @@ export default function Home({ props }) {
         >
           จองห้องพัก
         </button>
+        <button
+          className='bg-cerise-500 shadow-md hover:shadow-lg  text-lg py-6 text-shamrock-50  font-sans p-2 m-2'
+          onClick={() => history.push("/management/user")}
+        >
+          จัดการผู้ใช้งาน
+        </button>
       </div>
     </div>
   );

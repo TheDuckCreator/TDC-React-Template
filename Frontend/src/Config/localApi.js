@@ -2,7 +2,7 @@ import axios from "axios";
 
 axios.interceptors.request.use((config) => {
   try {
-    const token = window.localStorage.getItem("LOCAL_TOKEN" || "");
+    const token = window.localStorage.getItem("LOCAL_TOKEN");
     config.headers.Authorization = `Bearer ${token}`;
 
     return config;

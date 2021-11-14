@@ -50,11 +50,13 @@ export const getOneUser = (id) => async (dispatch) => {
 export const createOneUser = (payload) => async (dispatch) => {
   await api
     .post(`${process.env.REACT_APP_API_URL}/user/`, payload)
-    .then(() => {
+    .then((res) => {
+      console.log(res.data);
       console.log("Request Server to Create New USER");
       dispatch({ type: USER_CREATE });
     })
     .catch((err) => {
+      console.log("Error ", err);
       dispatch({
         type: USER_ERROR,
         payload: { error: err?.response?.data },
@@ -63,13 +65,15 @@ export const createOneUser = (payload) => async (dispatch) => {
 };
 
 export const editOneUser = (id, payload) => async (dispatch) => {
+  console.log("Dispatch is Call");
   await api
     .put(`${process.env.REACT_APP_API_URL}/user/${id}`, payload)
-    .then(() => {
+    .then((res) => {
       console.log("Request Server to edit USER");
       dispatch({ type: USER_UPDATE });
     })
     .catch((err) => {
+      console.log("Error ", err);
       dispatch({
         type: USER_ERROR,
         payload: { error: err?.response?.data },

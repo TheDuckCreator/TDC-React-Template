@@ -8,6 +8,7 @@ import About from "./About";
 import CreateBooking from "./CreateBooking";
 import RoomBookingStatus from "./BookingStatus/RoomBookingStatus";
 import DailyBookingStatus from "./BookingStatus/DailyBookingStatus";
+import UserManagement from "./Management/UserManagement";
 
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
@@ -71,6 +72,9 @@ const Container = () => {
           </Route>
           <Route path='/room-booking'>
             <RoomBookingStatus />
+          </Route>
+          <Route path='/management/user'>
+            <UserManagement />
           </Route>
           <Route path='/about'>
             <About />

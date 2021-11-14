@@ -6,10 +6,10 @@ export const meLogin = (payload) => async (dispatch) => {
     .post(`${process.env.REACT_APP_API_URL}/user/login`, payload)
     .then((res) => {
       console.log("Res", res.data);
-      const { accessToken, _id } = res?.data;
-      window.localStorage.setItem("LOCAL_TOKEN", accessToken);
+      const { authToken, _id } = res?.data;
+      window.localStorage.setItem("LOCAL_TOKEN", authToken);
       window.localStorage.setItem("USER_ID", _id);
-      console.log("Set Local Token Success");
+      console.log("Set Local Token Success", authToken);
       dispatch({ type: ME_LOGIN, payload: { isReady: true } });
     })
     .catch((err) => {
