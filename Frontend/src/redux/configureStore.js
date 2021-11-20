@@ -1,7 +1,7 @@
 import { applyMiddleware, compose, createStore } from "redux";
 import thunkMiddleware from "redux-thunk";
 import logger from "redux-logger";
-import rootReducer from "./reducers/index";
+import rootReducer from "./reducers";
 
 export default function configureStore() {
   let middlewares;
@@ -19,7 +19,7 @@ export default function configureStore() {
   const store = createStore(rootReducer, composedEnhancers);
 
   if (process.env.NODE_ENV !== "production" && module.hot) {
-    module.hot.accept("./Reducers", () => store.replaceReducer(rootReducer));
+    module.hot.accept("./reducers", () => store.replaceReducer(rootReducer));
   }
 
   return store;

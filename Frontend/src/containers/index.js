@@ -5,9 +5,6 @@ import liff from "@line/liff";
 
 import Home from "./Home";
 import About from "./About";
-import CreateBooking from "./CreateBooking";
-import RoomBookingStatus from "./BookingStatus/RoomBookingStatus";
-import DailyBookingStatus from "./BookingStatus/DailyBookingStatus";
 import UserManagement from "./Management/UserManagement";
 
 import Footer from "../components/Footer";
@@ -52,10 +49,8 @@ const Container = () => {
 
   useEffect(() => {
     if (isLoggedIn && !isReady) {
-      dispatch(actions.systemConnect()).then(() => {
-        dispatch(actions.meGet()).then(() => {
-          setIsReady(true);
-        });
+      dispatch(actions.meGet()).then(() => {
+        setIsReady(true);
       });
     }
 
@@ -70,6 +65,18 @@ const Container = () => {
     }
     return () => {};
   }, [me]);
+
+  if (!process.env.REACT_APP_LIFF_ID) {
+    return (
+      <div className='flex justify-center'>
+        <Result
+          status='error'
+          title='LIFF Not Found'
+          subTitle='ท่า่นยังไม่ได้ใส่ ID ของ Line Frontend Framework กรุณาใส่ลงใน .env และรันโปรแกรมใหม่อีกรอบ '
+        />
+      </div>
+    );
+  }
 
   if (!isReady) {
     return (
@@ -96,15 +103,6 @@ const Container = () => {
       <Navbar />
       <div className='min-h-screen m-8'>
         <Switch>
-          <Route path='/create-booking'>
-            <CreateBooking />
-          </Route>
-          <Route path='/daily-booking'>
-            <DailyBookingStatus />
-          </Route>
-          <Route path='/room-booking'>
-            <RoomBookingStatus />
-          </Route>
           <Route path='/management/user'>
             <UserManagement />
           </Route>

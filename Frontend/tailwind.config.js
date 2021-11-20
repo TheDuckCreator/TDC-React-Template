@@ -128,7 +128,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      sans: ["kanit", "sans-serif"],
+      theme: ["kanit", "sans-serif"],
       mono: ["Consolas", "Menlo", "Fira Code", "Noto Sans Mono", "Monospaced"],
     },
   },
