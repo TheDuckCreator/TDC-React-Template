@@ -55,9 +55,6 @@ export const onDeleteOne = async (req, res) => {
   }
 };
 
-<<<<<<< HEAD
-export default { onReadAll, onReadOne, onCreateOne, onEditOne, onDeleteOne };
-=======
 export default {
   onReadAll,
   onReadOne,
@@ -66,4 +63,3 @@ export default {
   onDeleteOne,
   onLogin,
 };
->>>>>>> ffd928d9dd4d31a7b0f9220d88a6370ab2808f61
