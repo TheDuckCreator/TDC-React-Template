@@ -1,31 +1,29 @@
 import {
-  BOOKING_ALL,
-  BOOKING_CREATE,
-  BOOKING_DELETE,
-  BOOKING_GET,
-  BOOKING_UPDATE,
-  BOOKING_ERROR,
-  BOOKING_VACANT,
+  USER_ALL,
+  USER_CREATE,
+  USER_UPDATE,
+  USER_GET,
+  USER_DELETE,
+  USER_ERROR,
 } from "../types";
 
 const intialState = { isReady: false };
-export default function BookingReducer(state = intialState, action) {
+
+export default function UserReducer(state = intialState, action) {
   switch (action.type) {
-    case BOOKING_ALL:
+    case USER_ALL:
       return { ...action.payload, isReady: true };
-    case BOOKING_VACANT:
+    case USER_GET:
       return { ...action.payload, isReady: true };
-    case BOOKING_GET:
-      return { ...action.payload, isReady: true };
-    case BOOKING_CREATE:
+    case USER_CREATE:
       return { ...action.payload, isReady: false };
-    case BOOKING_UPDATE: {
+    case USER_UPDATE: {
       return { ...action.payload, isReady: false };
     }
-    case BOOKING_DELETE: {
+    case USER_DELETE: {
       return { ...action.payload, isReady: false };
     }
-    case BOOKING_ERROR: {
+    case USER_ERROR: {
       return { ...action.payload, isReady: false };
     }
     default:

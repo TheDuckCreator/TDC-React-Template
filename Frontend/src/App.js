@@ -5,8 +5,8 @@ import "./main.css";
 import "./tailwind.css";
 import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 
-import configureStore from "./Redux/configureStore";
-import Container from "./Containers";
+import configureStore from "./redux/configureStore";
+import Container from "./containers";
 
 const App = () => {
   const store = configureStore();

@@ -1,1 +1,666 @@
-[{"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\index.js":"1","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\reportWebVitals.js":"2","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\App.js":"3","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\index.js":"4","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Home.js":"5","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Management\\UserManagement.js":"6","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\index.js":"7","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\UserActions.js":"8","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\MeActions.js":"9","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\configureStore.js":"10","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\index.js":"11","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\index.js":"12","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Home.js":"13","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Management\\UserManagement.js":"14","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\systemReducer.js":"15","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\BookingReducer.js":"16","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\RoomReducer.js":"17","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\CreateBooking.js":"18","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\BookingStatus\\DailyBookingStatus.js":"19","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\BookingStatus\\RoomBookingStatus.js":"20","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\SystemActions.js":"21","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\RoomActions.js":"22","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\BookingActions.js":"23","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\configureStore.js":"24","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\index.js":"25","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\CreateBooking.js":"26","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\BookingStatus\\RoomBookingStatus.js":"27","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\BookingStatus\\DailyBookingStatus.js":"28","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\systemReducer.js":"29","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\BookingReducer.js":"30","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\RoomReducer.js":"31","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\index.js":"32","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\BookingActions.js":"33","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\RoomActions.js":"34","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\SystemActions.js":"35","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\MeActions.js":"36","D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\UserActions.js":"37"},{"size":517,"mtime":1630946304413,"results":"38","hashOfConfig":"39"},{"size":375,"mtime":1630946304413,"results":"40","hashOfConfig":"39"},{"size":630,"mtime":1637418132856,"results":"41","hashOfConfig":"39"},{"size":3386,"mtime":1637418132867,"results":"42","hashOfConfig":"39"},{"size":1364,"mtime":1637418132862,"results":"43","hashOfConfig":"39"},{"size":3456,"mtime":1637418132867,"results":"44","hashOfConfig":"39"},{"size":163,"mtime":1637418132871,"results":"45","hashOfConfig":"39"},{"size":2611,"mtime":1637418132870,"results":"46","hashOfConfig":"39"},{"size":1269,"mtime":1637418132869,"results":"47","hashOfConfig":"39"},{"size":894,"mtime":1637418132875,"results":"48","hashOfConfig":"39"},{"size":453,"mtime":1637418132874,"results":"49","hashOfConfig":"39"},{"size":3386,"mtime":1637418132867,"results":"50","hashOfConfig":"39"},{"size":1364,"mtime":1637418132862,"results":"51","hashOfConfig":"39"},{"size":3456,"mtime":1637418132867,"results":"52","hashOfConfig":"39"},{"size":276,"mtime":1637418132874,"results":"53","hashOfConfig":"39"},{"size":909,"mtime":1637418132872,"results":"54","hashOfConfig":"39"},{"size":775,"mtime":1637418132873,"results":"55","hashOfConfig":"39"},{"size":518,"mtime":1637418132861,"results":"56","hashOfConfig":"39"},{"size":4750,"mtime":1637418132860,"results":"57","hashOfConfig":"39"},{"size":522,"mtime":1637418132861,"results":"58","hashOfConfig":"39"},{"size":680,"mtime":1637418132870,"results":"59","hashOfConfig":"39"},{"size":2527,"mtime":1637418132869,"results":"60","hashOfConfig":"39"},{"size":4153,"mtime":1637418132868,"results":"61","hashOfConfig":"39"},{"size":894,"mtime":1637418132875,"results":"62","hashOfConfig":"39"},{"size":453,"mtime":1637418132874,"results":"63","hashOfConfig":"39"},{"size":518,"mtime":1637418132861,"results":"64","hashOfConfig":"39"},{"size":522,"mtime":1637418132861,"results":"65","hashOfConfig":"39"},{"size":4750,"mtime":1637418132860,"results":"66","hashOfConfig":"39"},{"size":276,"mtime":1637418132874,"results":"67","hashOfConfig":"39"},{"size":909,"mtime":1637418132872,"results":"68","hashOfConfig":"39"},{"size":775,"mtime":1637418132873,"results":"69","hashOfConfig":"39"},{"size":163,"mtime":1637418132871,"results":"70","hashOfConfig":"39"},{"size":4153,"mtime":1637418132868,"results":"71","hashOfConfig":"39"},{"size":2527,"mtime":1637418132869,"results":"72","hashOfConfig":"39"},{"size":680,"mtime":1637418132870,"results":"73","hashOfConfig":"39"},{"size":1269,"mtime":1637418132869,"results":"74","hashOfConfig":"39"},{"size":2611,"mtime":1637418132870,"results":"75","hashOfConfig":"39"},{"filePath":"76","messages":"77","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},"fxi11h",{"filePath":"79","messages":"80","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"81","messages":"82","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"83","messages":"84","errorCount":0,"warningCount":3,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"85","messages":"86","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"87","messages":"88","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"89","messages":"90","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"91","messages":"92","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"93","messages":"94","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"95","messages":"96","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"97","messages":"98","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"99","messages":"100","errorCount":0,"warningCount":3,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"101","messages":"102","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"103","messages":"104","errorCount":0,"warningCount":1,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"105","messages":"106","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"107","messages":"108","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"109","messages":"110","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"111","messages":"112","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"113","messages":"114","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"115","messages":"116","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"117","messages":"118","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"119","messages":"120","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"121","messages":"122","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0,"usedDeprecatedRules":"78"},{"filePath":"123","messages":"124","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"125","messages":"126","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"127","messages":"128","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"129","messages":"130","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"131","messages":"132","errorCount":0,"warningCount":2,"fixableErrorCount":0,"fixableWarningCount":0,"source":null},{"filePath":"133","messages":"134","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"135","messages":"136","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"137","messages":"138","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"139","messages":"140","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"141","messages":"142","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"143","messages":"144","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"145","messages":"146","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"147","messages":"148","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},{"filePath":"149","messages":"150","errorCount":0,"warningCount":0,"fixableErrorCount":0,"fixableWarningCount":0},"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\index.js",[],["151","152"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\reportWebVitals.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\App.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\index.js",["153","154","155"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Home.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Management\\UserManagement.js",["156"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\index.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\UserActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\MeActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\configureStore.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\index.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\index.js",["157","158","159"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Home.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Management\\UserManagement.js",["160"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\systemReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\BookingReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\RoomReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\CreateBooking.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\BookingStatus\\DailyBookingStatus.js",["161","162"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\BookingStatus\\RoomBookingStatus.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\SystemActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\RoomActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\BookingActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\configureStore.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\index.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\CreateBooking.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\BookingStatus\\RoomBookingStatus.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\BookingStatus\\DailyBookingStatus.js",["163","164"],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\systemReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\BookingReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Reducers\\RoomReducer.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\index.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\BookingActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\RoomActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\SystemActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\MeActions.js",[],"D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Redux\\Actions\\UserActions.js",[],{"ruleId":"165","replacedBy":"166"},{"ruleId":"167","replacedBy":"168"},{"ruleId":"169","severity":1,"message":"170","line":51,"column":6,"nodeType":"171","endLine":51,"endColumn":8,"suggestions":"172"},{"ruleId":"169","severity":1,"message":"170","line":63,"column":6,"nodeType":"171","endLine":63,"endColumn":27,"suggestions":"173"},{"ruleId":"169","severity":1,"message":"174","line":72,"column":6,"nodeType":"171","endLine":72,"endColumn":10,"suggestions":"175"},{"ruleId":"169","severity":1,"message":"176","line":21,"column":6,"nodeType":"171","endLine":21,"endColumn":8,"suggestions":"177"},{"ruleId":"169","severity":1,"message":"170","line":48,"column":6,"nodeType":"171","endLine":48,"endColumn":8,"suggestions":"178"},{"ruleId":"169","severity":1,"message":"170","line":58,"column":6,"nodeType":"171","endLine":58,"endColumn":27,"suggestions":"179"},{"ruleId":"169","severity":1,"message":"174","line":67,"column":6,"nodeType":"171","endLine":67,"endColumn":10,"suggestions":"180"},{"ruleId":"169","severity":1,"message":"176","line":21,"column":6,"nodeType":"171","endLine":21,"endColumn":8,"suggestions":"181"},{"ruleId":"169","severity":1,"message":"170","line":45,"column":6,"nodeType":"171","endLine":45,"endColumn":20,"suggestions":"182"},{"ruleId":"169","severity":1,"message":"183","line":70,"column":6,"nodeType":"171","endLine":70,"endColumn":21,"suggestions":"184"},{"ruleId":"169","severity":1,"message":"170","line":45,"column":6,"nodeType":"171","endLine":45,"endColumn":20,"suggestions":"185"},{"ruleId":"169","severity":1,"message":"183","line":70,"column":6,"nodeType":"171","endLine":70,"endColumn":21,"suggestions":"186"},"no-native-reassign",["187"],"no-negated-in-lhs",["188"],"react-hooks/exhaustive-deps","React Hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array.","ArrayExpression",["189"],["190"],"React Hook useEffect has a missing dependency: 'isAllow'. Either include it or remove the dependency array.",["191"],"React Hook useEffect has missing dependencies: 'dispatch' and 'isReady'. Either include them or remove the dependency array.",["192"],["193"],["194"],["195"],["196"],["197"],"React Hook useEffect has a missing dependency: 'searchedDate'. Either include it or remove the dependency array.",["198"],["199"],["200"],"no-global-assign","no-unsafe-negation",{"desc":"201","fix":"202"},{"desc":"203","fix":"204"},{"desc":"205","fix":"206"},{"desc":"207","fix":"208"},{"desc":"201","fix":"209"},{"desc":"203","fix":"210"},{"desc":"205","fix":"211"},{"desc":"207","fix":"212"},{"desc":"213","fix":"214"},{"desc":"215","fix":"216"},{"desc":"213","fix":"217"},{"desc":"215","fix":"218"},"Update the dependencies array to be: [dispatch]",{"range":"219","text":"220"},"Update the dependencies array to be: [isReady, isLoggedIn, dispatch]",{"range":"221","text":"222"},"Update the dependencies array to be: [isAllow, me]",{"range":"223","text":"224"},"Update the dependencies array to be: [dispatch, isReady]",{"range":"225","text":"226"},{"range":"227","text":"220"},{"range":"228","text":"222"},{"range":"229","text":"224"},{"range":"230","text":"226"},"Update the dependencies array to be: [dispatch, searchedDate]",{"range":"231","text":"232"},"Update the dependencies array to be: [booking?.rows, searchedDate]",{"range":"233","text":"234"},{"range":"235","text":"232"},{"range":"236","text":"234"},[1747,1749],"[dispatch]",[2002,2023],"[isReady, isLoggedIn, dispatch]",[2174,2178],"[isAllow, me]",[694,696],"[dispatch, isReady]",[1563,1565],[1747,1768],[1919,1923],[694,696],[1463,1477],"[dispatch, searchedDate]",[2256,2271],"[booking?.rows, searchedDate]",[1463,1477],[2256,2271]]
+[
+  {
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\index.js": "1",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\reportWebVitals.js": "2",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\App.js": "3",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\index.js": "4",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Home.js": "5",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\About.js": "6",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\components\\Navbar.js": "7",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Management\\UserManagement.js": "8",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\components\\Footer.jsx": "9",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\index.js": "10",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\UserActions.js": "11",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\MeActions.js": "12",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\types.js": "13",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\config\\localApi.js": "14",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\config\\api.js": "15",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\configureStore.js": "16",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\index.js": "17",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\MeReducer.js": "18",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\UserReducer.js": "19",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\index.js": "20",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\About.js": "21",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Home.js": "22",
+    "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Management\\UserManagement.js": "23"
+  },
+  {
+    "size": 517,
+    "mtime": 1630946304413,
+    "results": "24",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 375,
+    "mtime": 1630946304413,
+    "results": "26",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 630,
+    "mtime": 1637416696941,
+    "results": "27",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 3386,
+    "mtime": 1637415921992,
+    "results": "28",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 1364,
+    "mtime": 1637415732876,
+    "results": "29",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 206,
+    "mtime": 1637415732875,
+    "results": "30",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 532,
+    "mtime": 1637415732874,
+    "results": "31",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 3456,
+    "mtime": 1637415922007,
+    "results": "32",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 550,
+    "mtime": 1637416012861,
+    "results": "33",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 62,
+    "mtime": 1637417998489,
+    "results": "34",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 2611,
+    "mtime": 1637415905267,
+    "results": "35",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 1269,
+    "mtime": 1637415905188,
+    "results": "36",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 973,
+    "mtime": 1637415732880,
+    "results": "37",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 334,
+    "mtime": 1637415732875,
+    "results": "38",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 341,
+    "mtime": 1637415732874,
+    "results": "39",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 888,
+    "mtime": 1637416764980,
+    "results": "40",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 241,
+    "mtime": 1637418024505,
+    "results": "41",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 462,
+    "mtime": 1637415732878,
+    "results": "42",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 775,
+    "mtime": 1637415732879,
+    "results": "43",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 3288,
+    "mtime": 1637417461520,
+    "results": "44",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 206,
+    "mtime": 1637415732875,
+    "results": "45",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 562,
+    "mtime": 1637416961539,
+    "results": "46",
+    "hashOfConfig": "25"
+  },
+  {
+    "size": 3456,
+    "mtime": 1637415922007,
+    "results": "47",
+    "hashOfConfig": "25"
+  },
+  {
+    "filePath": "48",
+    "messages": "49",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  "fxi11h",
+  {
+    "filePath": "51",
+    "messages": "52",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "53",
+    "messages": "54",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "55",
+    "messages": "56",
+    "errorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "57",
+    "messages": "58",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "59",
+    "messages": "60",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "61",
+    "messages": "62",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "63",
+    "messages": "64",
+    "errorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "65",
+    "messages": "66",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "67",
+    "messages": "68",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "69",
+    "messages": "70",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "71",
+    "messages": "72",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "73",
+    "messages": "74",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "75",
+    "messages": "76",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "77",
+    "messages": "78",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "79",
+    "messages": "80",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "81",
+    "messages": "82",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "83",
+    "messages": "84",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "85",
+    "messages": "86",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "usedDeprecatedRules": "50"
+  },
+  {
+    "filePath": "87",
+    "messages": "88",
+    "errorCount": 0,
+    "warningCount": 3,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  {
+    "filePath": "89",
+    "messages": "90",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "91",
+    "messages": "92",
+    "errorCount": 0,
+    "warningCount": 0,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0
+  },
+  {
+    "filePath": "93",
+    "messages": "94",
+    "errorCount": 0,
+    "warningCount": 1,
+    "fixableErrorCount": 0,
+    "fixableWarningCount": 0,
+    "source": null
+  },
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\index.js",
+  [],
+  [
+    "95",
+    "96"
+  ],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\reportWebVitals.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\App.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\index.js",
+  [
+    "97",
+    "98",
+    "99"
+  ],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Home.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\About.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\components\\Navbar.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\Containers\\Management\\UserManagement.js",
+  [
+    "100"
+  ],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\components\\Footer.jsx",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\index.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\UserActions.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\actions\\MeActions.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\types.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\config\\localApi.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\config\\api.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\configureStore.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\index.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\MeReducer.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\redux\\reducers\\UserReducer.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\index.js",
+  [
+    "101",
+    "102",
+    "103"
+  ],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\About.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Home.js",
+  [],
+  "D:\\TheDuckCreator\\TDC-React-Template\\Frontend\\src\\containers\\Management\\UserManagement.js",
+  [
+    "104"
+  ],
+  {
+    "ruleId": "105",
+    "replacedBy": "106"
+  },
+  {
+    "ruleId": "107",
+    "replacedBy": "108"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "110",
+    "line": 51,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 51,
+    "endColumn": 8,
+    "suggestions": "112"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "110",
+    "line": 63,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 63,
+    "endColumn": 27,
+    "suggestions": "113"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "114",
+    "line": 72,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 72,
+    "endColumn": 10,
+    "suggestions": "115"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "116",
+    "line": 21,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 21,
+    "endColumn": 8,
+    "suggestions": "117"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "110",
+    "line": 48,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 48,
+    "endColumn": 8,
+    "suggestions": "118"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "110",
+    "line": 58,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 58,
+    "endColumn": 27,
+    "suggestions": "119"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "114",
+    "line": 67,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 67,
+    "endColumn": 10,
+    "suggestions": "120"
+  },
+  {
+    "ruleId": "109",
+    "severity": 1,
+    "message": "116",
+    "line": 21,
+    "column": 6,
+    "nodeType": "111",
+    "endLine": 21,
+    "endColumn": 8,
+    "suggestions": "121"
+  },
+  "no-native-reassign",
+  [
+    "122"
+  ],
+  "no-negated-in-lhs",
+  [
+    "123"
+  ],
+  "react-hooks/exhaustive-deps",
+  "React Hook useEffect has a missing dependency: 'dispatch'. Either include it or remove the dependency array.",
+  "ArrayExpression",
+  [
+    "124"
+  ],
+  [
+    "125"
+  ],
+  "React Hook useEffect has a missing dependency: 'isAllow'. Either include it or remove the dependency array.",
+  [
+    "126"
+  ],
+  "React Hook useEffect has missing dependencies: 'dispatch' and 'isReady'. Either include them or remove the dependency array.",
+  [
+    "127"
+  ],
+  [
+    "128"
+  ],
+  [
+    "129"
+  ],
+  [
+    "130"
+  ],
+  [
+    "131"
+  ],
+  "no-global-assign",
+  "no-unsafe-negation",
+  {
+    "desc": "132",
+    "fix": "133"
+  },
+  {
+    "desc": "134",
+    "fix": "135"
+  },
+  {
+    "desc": "136",
+    "fix": "137"
+  },
+  {
+    "desc": "138",
+    "fix": "139"
+  },
+  {
+    "desc": "132",
+    "fix": "140"
+  },
+  {
+    "desc": "134",
+    "fix": "141"
+  },
+  {
+    "desc": "136",
+    "fix": "142"
+  },
+  {
+    "desc": "138",
+    "fix": "143"
+  },
+  "Update the dependencies array to be: [dispatch]",
+  {
+    "range": "144",
+    "text": "145"
+  },
+  "Update the dependencies array to be: [isReady, isLoggedIn, dispatch]",
+  {
+    "range": "146",
+    "text": "147"
+  },
+  "Update the dependencies array to be: [isAllow, me]",
+  {
+    "range": "148",
+    "text": "149"
+  },
+  "Update the dependencies array to be: [dispatch, isReady]",
+  {
+    "range": "150",
+    "text": "151"
+  },
+  {
+    "range": "152",
+    "text": "145"
+  },
+  {
+    "range": "153",
+    "text": "147"
+  },
+  {
+    "range": "154",
+    "text": "149"
+  },
+  {
+    "range": "155",
+    "text": "151"
+  },
+  [
+    1747,
+    1749
+  ],
+  "[dispatch]",
+  [
+    2002,
+    2023
+  ],
+  "[isReady, isLoggedIn, dispatch]",
+  [
+    2174,
+    2178
+  ],
+  "[isAllow, me]",
+  [
+    694,
+    696
+  ],
+  "[dispatch, isReady]",
+  [
+    1563,
+    1565
+  ],
+  [
+    1747,
+    1768
+  ],
+  [
+    1919,
+    1923
+  ],
+  [
+    694,
+    696
+  ]
+]

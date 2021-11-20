@@ -2,17 +2,19 @@
 
 ![FileSize](https://img.shields.io/github/repo-size/TheDuckCreator/TDC-React-Template)
 
-React-Express Bootstraping Template (Frontend and Backend) for The Duck Creator in 2021. Including
+React-Redux-Express-Liff Bootstraping Template (Frontend and Backend) for The Duck Creator in 2021. Including
 
 TDC Main Color `#10ceab`
 
 ### Frontend
 
-- **React** from [Create-React-App](https://create-react-app.dev)
-- **Style Sheet and UI** [TailwindCSS](https://tailwindcss.com/) as CSS and [Chakra UI](https://chakra-ui.com/) as UI Component Library
+- **React** from [Create-React-App](https://create-react-app.dev) and **Redux** with [React-Redux](https://react-redux.js.org/) with Redux Thunk and [redux-logger](https://github.com/LogRocket/redux-logger)
+- **Style Sheet and UI** [TailwindCSS](https://tailwindcss.com/) as CSS and [Ant Design](https://ant.design/) as UI Component Library
+- **Framwork** [Line Front-end Framework (LIFF)](https://developers.line.biz/en/docs/liff/) v2 That you can create app with Line Login and another Line Integration here.
 - **Icon** Fontawesone on [React Fontawesone](https://github.com/FortAwesome/react-fontawesome)
 - **Meta Tag Manager** with [React Helmet](https://github.com/nfl/react-helmet)
 - **Router** with [React-router](https://reactrouter.com/)
+- **Timing** with [Dayjs](https://day.js.org/)
 
 ### Backend
 
@@ -36,40 +38,6 @@ While you want to start project run this command
 
         npm run dev
 
-Project will run on Port **3000** and backend will run on Port **6000**
+Project will run on Port **3000** and backend will run on Port **7000**
 
 it will run concurently backend and fontends. Edit our config file at `src\config.json` and continues editing `src/App.js` for frontend and `src/Server/index.js` for backend
-
-## File Structure
-
-```
-    |- Src
-        |- Server
-            - Model
-                - ...
-                - ...
-            - Routes
-                - ...
-                - ...
-            - app.js
-            - index.js
-            - mainroute.js
-        |- Components
-            - ...
-            - ...
-        |- Containers
-            - ...
-            - ...
-        |- App.js
-        |- App.css
-        |- config.json
-        |- index.js
-        |- index.css
-        |- tailwind.css
-        |- main.css
-    |- tailwind.config.js
-    |- package.json
-    |- babel.config.json
-    |- .env.development
-    |- .env.production
-```

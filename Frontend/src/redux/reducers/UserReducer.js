@@ -1,29 +1,29 @@
 import {
-  ROOM_ALL,
-  ROOM_CREATE,
-  ROOM_UPDATE,
-  ROOM_GET,
-  ROOM_DELETE,
-  ROOM_ERROR,
+  USER_ALL,
+  USER_CREATE,
+  USER_UPDATE,
+  USER_GET,
+  USER_DELETE,
+  USER_ERROR,
 } from "../types";
 
 const intialState = { isReady: false };
 
-export default function RoomReducer(state = intialState, action) {
+export default function UserReducer(state = intialState, action) {
   switch (action.type) {
-    case ROOM_ALL:
+    case USER_ALL:
       return { ...action.payload, isReady: true };
-    case ROOM_GET:
+    case USER_GET:
       return { ...action.payload, isReady: true };
-    case ROOM_CREATE:
+    case USER_CREATE:
       return { ...action.payload, isReady: false };
-    case ROOM_UPDATE: {
+    case USER_UPDATE: {
       return { ...action.payload, isReady: false };
     }
-    case ROOM_DELETE: {
+    case USER_DELETE: {
       return { ...action.payload, isReady: false };
     }
-    case ROOM_ERROR: {
+    case USER_ERROR: {
       return { ...action.payload, isReady: false };
     }
     default:
