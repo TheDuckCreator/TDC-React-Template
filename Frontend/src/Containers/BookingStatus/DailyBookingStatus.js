@@ -7,7 +7,7 @@ import IsSameOrBefore from "dayjs/plugin/isSameOrBefore";
 import IsSameOrAfter from "dayjs/plugin/isSameOrAfter";
 import _ from "lodash";
 
-import * as actions from "../../Redux/Actions";
+import * as actions from "../../redux/actions";
 
 dayjs.extend(IsSameOrBefore);
 dayjs.extend(IsSameOrAfter);

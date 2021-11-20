@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Avatar, Button, Tag, Typography, Table, Spin } from "antd";
 import { useHistory } from "react-router-dom";
 import _ from "lodash";
-import * as actions from "../../Redux/Actions";
+import * as actions from "../../redux/actions";
 
 export default function UserManagement({ props }) {
   const history = useHistory();

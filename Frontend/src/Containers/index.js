@@ -10,10 +10,10 @@ import RoomBookingStatus from "./BookingStatus/RoomBookingStatus";
 import DailyBookingStatus from "./BookingStatus/DailyBookingStatus";
 import UserManagement from "./Management/UserManagement";
 
-import Footer from "../Components/Footer";
-import Navbar from "../Components/Navbar";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 
-import * as actions from "../Redux/Actions";
+import * as actions from "../redux/actions";
 import { Result, Spin } from "antd";
 
 const Container = () => {
