@@ -24,20 +24,27 @@ const verifyToken = (token) => {
 
     return false;
   } catch (error) {
+    console.error(error.message);
     throw new Error("Cannot Verify your token", error);
   }
 };
 
-const verifyRequest = (req, res, next) => {
-  const bearerToken = req.headers.Authorization;
-  const token = _.last(_.split(bearerToken, ""));
+const verifyRequest = async (req, res, next) => {
+  const bearerToken = req.headers.authorization;
+  const token = _.last(_.split(bearerToken, " "));
   try {
     if (verifyToken(token) === true) {
+      console.log("Verify Request Pass");
       next();
     } else {
+      console.log("Cannot Verify Request");
       res.status(403);
     }
-  } catch (error) {}
+  } catch (error) {
+    console.log("Cannot Verify Request", error.message);
+
+    res.status(403);
+  }
 };
 
 export default { generateToken, verifyToken, verifyRequest };

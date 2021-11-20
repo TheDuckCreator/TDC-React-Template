@@ -1,8 +1,14 @@
 import express from "express";
-const app = express.Router();
+import path from "path";
 
-app.get("/", (req, res) => {
-  res.send("The Duck Creator Express Server");
-});
+const app = express.Router();
+const staticPath = express.static(path.join(__dirname, "../www"));
+
+app.use("/", staticPath);
+app.use("/daily-booking", staticPath);
+app.use("/room-booking", staticPath);
+app.use("/create-booking", staticPath);
+app.use("/management", staticPath);
+app.use("/management/*", staticPath);
 
 export default app;

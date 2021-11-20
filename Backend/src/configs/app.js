@@ -1,8 +1,9 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 export default {
-  port: 7000,
-  dbConnectionString: "mongodb://localhost:27017/tdcmedical",
-  clientSecret: "7329fd968cd1be8c1f6a49364ad582936174de51",
-  clientId: "ba0bc3f9f544798b28a0",
-  callbackURL: "https://medtaking.theduckcreator.in.th/api/auth/callback",
-  secret: "TDC-CreateForBetter",
+  port: process.env.PORT || 7000,
+  dbConnectionString:
+    process.env.MONGO_DB_URI || "mongodb://localhost:27017/tdcmedical",
+  secret: process.env.SECRET || "TDC-CreateForBetter",
 };
